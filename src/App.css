@@ -1,60 +1,63 @@
-.container {
+/* Center the content properly */
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   background: linear-gradient(to bottom, #4facfe, #00f2fe);
   border-radius: 15px;
   padding: 20px;
-  text-align: center;
-  width: 300px;
-  margin: auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Style the city name */
 .city-name {
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: bold;
   margin-top: 10px;
 }
 
+/* Weather icon fixes */
 .weather-icon {
   width: 50px;
   height: 50px;
   margin-bottom: 10px;
 }
 
+/* Temperature */
 .temperature {
-  font-size: 36px;
+  font-size: 3rem;
   font-weight: bold;
+  margin: 10px 0;
 }
 
-.description {
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 10px;
+/* Weather description */
+.weather-description {
+  font-size: 1.2rem;
+  color: #fff;
 }
 
+/* Input box */
 .input-container {
   display: flex;
-  justify-content: center;
-  margin-top: 10px;
+  align-items: center;
+  gap: 10px;
 }
 
-input {
-  padding: 8px;
-  border-radius: 8px;
+.input-field {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
   border: none;
   outline: none;
-  width: 180px;
 }
 
-button {
-  background-color: white;
+/* Get Button */
+.get-button {
+  padding: 10px 15px;
+  background-color: #ff6b6b;
+  color: white;
   border: none;
-  padding: 8px 12px;
-  border-radius: 8px;
-  margin-left: 5px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-button:hover {
-  background: lightgray;
 }
